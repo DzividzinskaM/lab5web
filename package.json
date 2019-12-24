@@ -1,0 +1,25 @@
+{
+  "name": "web_lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js",
+    "prettier": "prettier --config .prettierrc.json --write index.js",
+    "precommit": "npm run prettier",
+    "prepush": "npm run test",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1"
+  },
+  "precommit": "npm run prettier",
+  "prepush": "call npm run lint && call npm run test"
+}

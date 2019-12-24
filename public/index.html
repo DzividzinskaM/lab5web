@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script language="JavaScript">
+		function square (obj){
+		obj.res.value=(((obj.par_x1.value*obj.par_y2.value)+(obj.par_x2.value*obj.par_y3.value)+(obj.par_x3.value*obj.par_y1.value))-((obj.par_y1.value*obj.par_x2.value)+(obj.par_y2.value*obj.par_x3.value)+(obj.par_y3.value*obj.par_x1.value)))/2;
+		return s
+		}	
+</script>
+</head>
+<body>
+	<h1>Функція і обробка подій</h1>
+	<p>Cценарій обчислення площі трикутника за заданими координатами трьох точок на площині. </p>
+	<form name="form1">
+		x1: <input type="text" size="4" name="par_x1">
+		y1: <input type="text" size="4" name="par_y1"><br>
+		x2: <input type="text" size="4" name="par_x2">
+		y2: <input type="text" size="4" name="par_y2"><br>
+		x3: <input type="text" size="4" name="par_x3">
+		y3: <input type="text" size="4" name="par_y3"><br>
+		Площа трикутника: <input type="text" size="4" name="res" onfocus="square(form1)"><br>
+	</form>
+	<br>
+</body>
+</html>
+
